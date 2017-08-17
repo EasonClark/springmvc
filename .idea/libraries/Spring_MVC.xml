@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Spring MVC" type="spring-mvc">
+    <CLASSES>
+      <root url="jar://E:/Program Study Files/project-jars/aopalliance-1.0.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/commons-logging-1.2.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/jstl.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/logback-classic-1.1.1.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/logback-core-1.1.1.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/slf4j-api-1.7.6.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-aop-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-aspects-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-beans-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-context-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-context-support-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-core-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-expression-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-instrument-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-instrument-tomcat-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-jdbc-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-jms-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-messaging-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-orm-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-oxm-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-test-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-tx-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-web-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-webmvc-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-webmvc-portlet-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/spring-websocket-4.3.10.RELEASE.jar!/" />
+      <root url="jar://E:/Program Study Files/project-jars/standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
