@@ -9,7 +9,7 @@
 <html>
   <head>
     <title>springmvc</title>
-      <script src="./js/jquery-3.2.1.js"></script>
+      <script src="./WEB-INF/js/jquery-3.2.1.js"></script>
       <script type="text/javascript">
         $("#login").click(function () {
             var name = $("#name").val();

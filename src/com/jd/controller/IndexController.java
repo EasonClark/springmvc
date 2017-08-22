@@ -1,14 +1,13 @@
 package com.jd.controller;
 
+import com.jd.beans.ResultData;
+import com.jd.beans.UserInfo;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Date;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * test index controller
@@ -21,31 +20,28 @@ import java.util.Date;
 @RequestMapping(value = "/")
 public class IndexController {
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(IndexController.class);
-    @Autowired
-    private HttpServletRequest request;
 
-    @RequestMapping(value = "/index")
-    public ModelAndView IndexController(){
+    @RequestMapping(value = "/login.do",method = RequestMethod.POST,headers = "Accept=application/json")
+    @ResponseBody
+    public ResultData loginController(@RequestBody UserInfo userInfo){
         logger.debug("step into method IndexController");
 
-        String name = request.getParameter("name");
-        String password = request.getParameter("password");
-
-        ModelAndView mav = new ModelAndView();
-        mav.addObject("msg","Hello World");
-        mav.getModelMap().put("time",new Date());
-
-        if (name != null && password != null) {
-            if("abc".equals(name) && "123".equals(password)){
-                mav.addObject("flag","true");
+        String userName = userInfo.getUserName();
+        String password = userInfo.getPassword();
+        ResultData rd = new ResultData();
+        if (userName != null && password != null) {
+            if("abc".equals(userName) && "123".equals(password)){
+                rd.setStatus("1");
+                rd.setMessage("login successfully");
             }else{
-                mav.addObject("flag","false");
+                rd.setStatus("2");
+                rd.setMessage("userName or password is wrong,please confirm");
             }
         }
 
         logger.debug("step out method IndexController");
         logger.info("execute method over");
-        return mav;
+        return rd;
     }
 
 }

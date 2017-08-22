@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome to jd</title>
+    <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $().ready(function () {
+            $('#login').click(function () {
+                alert(1);
+                var userInfo = new Object();
+                var userName = $('#userName').val();
+                var password = $('#password').val();
+                alert(userName + "," + password);
+                userInfo.userName = userName;
+                userInfo.password = password;
+
+                if(userName != null && userName != "" && password != null && password != ""){
+                    $.ajax({
+                        url : "./login.do",
+                        type : "post",
+                        data : JSON.stringify(userInfo),
+                        dataType : "json",
+                        contentType : "application/json",
+                        success :function (data) {
+                            var status = data.status;
+                            var message = data.message;
+                            alert(status + "," + message);
+                        }
+                    });
+                }else{
+                    alert("userName or password can't be null");
+                    return;
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <input id="userName" type="text"><br/>
+    <input id="password" type="password"><br/>
+    <input id="login" value="登录" type="button" style="background: lightskyblue">
+
+</body>
+</html>
